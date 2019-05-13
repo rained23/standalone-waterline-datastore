@@ -1,4 +1,4 @@
-standalone-waterline-datastore
+## standalone-waterline-datastore
 
 1. Change `.env` to your setting.
 2. Then run the following.

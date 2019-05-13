@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon --exec babel-node ./app/index.js"
+    "start": "cross-env NODE_ENV=development nodemon --exec babel-node ./app/index.js",
+    "migrate": "node_modules/.bin/knex migrate:latest",
+    "rollback": "node_modules/.bin/knex migrate:rollback",
+    "seed": "node_modules/.bin/knex seed:run"
   },
   "author": "",
   "license": "ISC",
